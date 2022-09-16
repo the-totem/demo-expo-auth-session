@@ -3,21 +3,21 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "start": "ENV=development IP_ADDRESS=$(ipconfig getifaddr en0) expo start --dev-client",
+    "build:android:device": "ENV=development eas build --platform android --profile development"
   },
   "dependencies": {
-    "expo": "~46.0.9",
-    "expo-status-bar": "~1.4.0",
-    "react": "18.0.0",
-    "react-native": "0.69.5",
+    "@types/react": "~18.0.0",
+    "expo": "^46.0.0",
     "expo-auth-session": "~3.7.1",
-    "expo-random": "~12.3.0"
+    "expo-dev-client": "~1.2.1",
+    "expo-random": "~12.3.0",
+    "react": "18.0.0",
+    "react-native": "0.69.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.18.6",
+    "babel-preset-expo": "~9.2.0"
   },
   "private": true
 }
