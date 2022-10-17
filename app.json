@@ -25,7 +25,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.melbius_.demo"
+      "package": "com.melbius.demo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
